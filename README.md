@@ -1,46 +1,46 @@
 # DevSweeper
 
-A fast TUI tool to clean up system junk, app caches, and temp folders directly from your terminal.
+A fast, lightweight TUI tool to clean up system junk, app caches, and temp folders directly from your terminal.
 
 Built with **Go** and **Bubble Tea**.
 
 ---
 
 ## Features
-- **Fast Scanning:** Finds junk folders across your system quickly.
-- **Dynamic Sorting:** Automatically sorts folders by size once calculated.
-- **Terminal UI:** Uses pagination, size-based color coding, and a deletion progress bar.
-- **Safe:** Skips `.git` repositories and respects locked files.
-- **Batch Deletion:** Select multiple targets (or press `A` to select all) and hit `Enter` to delete.
+- **Fast Scanning:** Quickly discovers junk folders and caches across your system.
+- **Dynamic Sorting:** Automatically ranks folders by calculated disk usage.
+- **Terminal UI:** Smooth keyboard navigation, size-based color coding, and deletion progress bar.
+- **Safe:** Automatically protects `.git` repositories and safely handles locked files.
+- **Batch Operations:** Select multiple directories (or press `A` to select all) and clean in one keystroke.
 
-## What it targets:
+## Targets Cleaned:
 - Windows `Temp` & `tmp` directories
-- App caches (`Cache`, `.cache`, `CachedData`, `GPUCache`)
-- Python & Visual Studio caches (`__pycache__`, `.pytest_cache`, `.vs`)
-- Crash reports (`Crashpad`, `CrashReports`, `logs`)
+- Application caches (`Cache`, `.cache`, `CachedData`, `GPUCache`)
+- Development artifacts (`__pycache__`, `.pytest_cache`, `.vs`)
+- Crash logs & reports (`Crashpad`, `CrashReports`, `logs`)
 
 ---
 
 ## Installation & Usage
 
-### The Easy Way
-You can download the pre-compiled `DevSweeper.exe` directly from the Releases page, double-click it, and start cleaning.
+### Pre-compiled Binary
+Download `DevSweeper.exe` directly from the [Releases](https://github.com/amiraliT-88/DevSweeper/releases) page.
 
-### Build from source
-Make sure you have [Go](https://golang.org/) installed.
+### Build from Source
+Make sure you have [Go](https://golang.org/) installed:
 ```bash
-git clone https://github.com/yourusername/DevSweeper.git
+git clone https://github.com/amiraliT-88/DevSweeper.git
 cd DevSweeper
 go build -o DevSweeper.exe .
 ./DevSweeper.exe
 ```
 
 ## Controls
-- `Up/Down` or `k/j`: Navigate the list
-- `Space`: Select/Deselect a folder
-- `A`: Select/Deselect All
-- `Enter`: Delete selected folders
+- `↑ / ↓` or `k / j`: Navigate list
+- `Space`: Toggle folder selection
+- `A`: Select / Deselect All
+- `Enter`: Delete selected items
 - `Q`: Quit
 
 ## Contributing
-Pull requests and issues are welcome.
+Issues and Pull Requests are welcome!
