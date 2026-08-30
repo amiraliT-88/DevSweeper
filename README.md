@@ -1,5 +1,5 @@
 <div align="center">
-  # 🧹 DevSweeper
+  <h1>🧹 DevSweeper</h1>
   
   **A lightning-fast, interactive TUI tool to scan and purge system junk, app caches, and developer artifacts directly from your terminal.**
 
